@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-rpdu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas/test-images@sha256:144785e387163b28a763da0fbed91e28d1991b36011a77ae3bbc8ea4833b149d
+        name: my-python
+        resources: {}
+status: {}
